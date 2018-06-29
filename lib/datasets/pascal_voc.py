@@ -11,9 +11,10 @@ from __future__ import print_function
 import sys
 
 sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/main/')
+sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/datasets/')
 import os
-from datasets.imdb import imdb
-import datasets.ds_utils as ds_utils
+from imdb import imdb
+import ds_utils as ds_utils
 import xml.etree.ElementTree as ET
 import numpy as np
 import scipy.sparse

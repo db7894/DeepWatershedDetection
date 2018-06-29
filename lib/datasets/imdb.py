@@ -11,10 +11,11 @@ from __future__ import print_function
 import sys
 
 sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/main/')
+sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/utils/')
 import os
 import os.path as osp
 import PIL
-from utils.bbox import bbox_overlaps
+from bbox import bbox_overlaps
 import numpy as np
 import scipy.sparse
 from config import cfg
