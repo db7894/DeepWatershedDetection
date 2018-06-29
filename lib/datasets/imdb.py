@@ -15,6 +15,7 @@ sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/
 import os
 import os.path as osp
 import PIL
+#import pyximport; pyximport.install()
 from bbox import bbox_overlaps
 import numpy as np
 import scipy.sparse

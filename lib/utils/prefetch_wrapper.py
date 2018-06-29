@@ -1,6 +1,9 @@
+import sys
+sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/utils/')
+
 from multiprocessing import Process, Lock, Manager,Value
 import time
-from utils.Fast_Queue import Fast_Queue as Queue
+from Fast_Queue import Fast_Queue as Queue
 
 
 class PrefetchWrapper:

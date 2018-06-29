@@ -10,12 +10,17 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import sys
+
+sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/main/')
+sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/utils/')
+sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/datasets/')
 import numpy as np
 import numpy.random as npr
 import cv2
-from main.config import cfg
-from utils.blob import prep_im_for_blob, im_list_to_blob
-from datasets.fcn_groundtruth import get_markers,stamp_class
+from config import cfg
+from blob import prep_im_for_blob, im_list_to_blob
+from fcn_groundtruth import get_markers,stamp_class
 
 
 def get_minibatch(roidb, args, assign, helper):

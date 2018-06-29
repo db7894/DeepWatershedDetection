@@ -13,8 +13,12 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from main.config import cfg
-from roi_data_layer.minibatch import get_minibatch
+import sys
+
+sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/main/')
+sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/roi_data_layer/')
+from config import cfg
+from minibatch import get_minibatch
 import numpy as np
 import time
 

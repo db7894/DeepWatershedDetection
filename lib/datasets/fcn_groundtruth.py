@@ -3,16 +3,17 @@
 # Written by Lukas Tuggener
 # --------------------------------------------------------
 
+import sys
+sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/main/')
 
 from PIL import Image, ImageDraw
 import numpy as np
 import random
-from main.config import cfg
+from config import cfg
 import cv2
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import math
-import sys
 
 marker_size = [4,4]
 

@@ -23,7 +23,7 @@ import utils.bbox
 import pickle
 import subprocess
 import uuid
-from .voc_eval import voc_eval
+from voc_eval import voc_eval
 from config import cfg
 
 
