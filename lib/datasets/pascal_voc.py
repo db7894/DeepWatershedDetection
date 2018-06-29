@@ -8,6 +8,9 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import sys
+
+sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/main/')
 import os
 from datasets.imdb import imdb
 import datasets.ds_utils as ds_utils
@@ -20,7 +23,7 @@ import pickle
 import subprocess
 import uuid
 from .voc_eval import voc_eval
-from main.config import cfg
+from config import cfg
 
 
 class pascal_voc(imdb):

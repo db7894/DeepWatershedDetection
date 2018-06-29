@@ -1,7 +1,13 @@
-from models.RefineNet import build_refinenet
+import sys
+
+#sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/utils/')
+sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/models/')
+#sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/datasets/')
+sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/main/')
+from RefineNet import build_refinenet
 import tensorflow as tf
 from tensorflow.contrib import slim
-from main.config import cfg
+from config import cfg
 
 
 def build_dwd_net(input,model,num_classes,pretrained_dir,substract_mean = False):

@@ -7,9 +7,13 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from datasets.imdb import imdb
-import datasets.ds_utils as ds_utils
-from main.config import cfg
+import sys
+
+sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/datasets/')
+sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/main/')
+from imdb import imdb
+import ds_utils as ds_utils
+from config import cfg
 import os.path as osp
 import sys
 import os

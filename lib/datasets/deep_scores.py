@@ -8,10 +8,14 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import sys
+
+sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/datasets/')
+sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/main/')
 import os
 import pandas as pa
-from datasets.imdb import imdb
-import datasets.ds_utils as ds_utils
+from imdb import imdb
+import ds_utils as ds_utils
 import xml.etree.ElementTree as ET
 import numpy as np
 import scipy.sparse
@@ -20,8 +24,8 @@ import utils.bbox
 import pickle
 import subprocess
 import uuid
-from datasets.voc_eval import voc_eval
-from main.config import cfg
+from voc_eval import voc_eval
+from config import cfg
 import random
 
 

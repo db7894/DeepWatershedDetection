@@ -10,11 +10,14 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import sys
+
 __sets = {}
-from datasets.pascal_voc import pascal_voc
-from datasets.coco import coco
-from datasets.deep_scores import deep_scores
-from datasets.musicma import musicma
+sys.path.insert(0,'/data1/dbashir/Project/Summer2018/DeepWatershedDetection/lib/datasets/')
+from pascal_voc import pascal_voc
+from coco import coco
+from deep_scores import deep_scores
+from musicma import musicma
 
 # Set up voc_<year>_<split> 
 for year in ['2007', '2012']:
